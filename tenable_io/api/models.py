@@ -1663,6 +1663,7 @@ class ScanSettings(BaseModel):
             folder_id=None,
             policy_id=None,
             scanner_id=None,
+            asset_lists=[],
             acls=[],
     ):
         self.name = name
@@ -1679,6 +1680,7 @@ class ScanSettings(BaseModel):
         self.policy_id = policy_id
         self.scanner_id = scanner_id
         self.text_targets = text_targets
+        self.asset_lists = asset_lists
         self.acls = acls
 
 
